@@ -1,0 +1,68 @@
+.card{
+  position: relative;
+  display: block;
+  .card-body{
+    position: relative;
+    display: block;
+    padding-top: 1px;
+    padding-bottom: 1px;
+    padding-left: 15px;
+    width: 100%;
+  }
+  a{
+    position: relative;
+    display: block;
+    width: 100%;
+    padding-left: 15px;
+  }
+}
+
+@mixin card-a{
+  a{
+    color: white;
+  }
+  a :hover, a :active{
+    color: #b7b7b7 !important;
+    text-decoration: none !important;
+  }
+}
+.card-red{
+  color: white;
+  .card-body{
+    background: #E35B5A;
+  }
+  a{
+    background: #E14E4E;
+  }
+  @include card-a;
+}
+.card-blue{
+  color: white !important;
+  .card-body{
+    background: #578EBE;
+  }
+  a{
+    background: #4C87B9;
+  }
+  @include card-a;
+}
+.card-green{
+  color: white !important;
+  .card-body{
+    background: #44B6AE;
+  }
+  a{
+    background: #3FABA4;
+  }
+  @include card-a;
+}
+.card-purple{
+  color: white !important;
+  .card-body{
+    background: #8775A7;
+  }
+  a{
+    background: #7F6CA1;
+  }
+  @include card-a;
+}
